@@ -83,9 +83,9 @@ def partial_match(list_of_tuple , parial_matching_tuple):
 def remove_expense(date , amount , category):
     '''
     This function will remove the a expense from the list of expenses , 
-    we need to ask the user what expense at what fate does he want to remove
+    we need to ask the user what expense at what date does he want to remove
     '''
-    #we first assume that the user provided the catergory and amount for the expense
+    #we first assume that the user provided the category and amount for the expense
     if amount is not None and category is not None: 
         partial_matching_tuple = (date , amount , category)
         result = partial_match(list_of_tuple=all_expenses , parial_matching_tuple=partial_matching_tuple)
@@ -167,7 +167,7 @@ def remove_expense(date , amount , category):
 #=========================== Menu helper function for edit expense =================================
 def menu_edit_expense():
     edit_uder_choice = '''
-Please enter waht you want to change about the expense
+Please enter what you want to change about the expense
 
 1. date
 2. amount 
@@ -225,7 +225,7 @@ def edit_expense(date , amount , category):
         return
         
     if user_choice < 1 or user_choice > 4:
-        print("entere a valid choice")
+        print("enter a valid choice")
         return
 
     #if user wants to change the date
@@ -233,7 +233,7 @@ def edit_expense(date , amount , category):
         try:
             day = int(input('please enter the day'))
             month = int(input('please enter the month'))
-            year = int(input('pelase enter the year'))
+            year = int(input('please enter the year'))
  
         except ValueError:
             print("enter date in numbers please")
@@ -321,7 +321,7 @@ def main():
         try:
             amount = int(input("enter the amount you want to add"))
         except ValueError as VE:
-            print("please enter didgits and not a sentence")
+            print("please enter digits and not a sentence")
             return
         category = input('enter your category')
 
@@ -375,7 +375,7 @@ def main():
         amount_flag = input("do you remember the amount (y/n)").lower()
         if amount_flag == 'y':
             try:
-                amount = int(input("emter the amount:"))
+                amount = int(input("enter the amount:"))
             except ValueError:
                 print("please enter the valid value")
                 return 
@@ -419,7 +419,7 @@ def main():
         amount_flag = input("do you remember the amount (y/n)").lower()
         if amount_flag == 'y':
             try:
-                amount = int(input("emter the amount:"))
+                amount = int(input("enter the amount:"))
             except ValueError:
                 print("please enter the valid value")
                 return 
