@@ -130,18 +130,10 @@ The following issues have been identified in the current version:
 
 6. **Empty List Handling**: No validation for empty expense lists when viewing, removing, or editing expenses - may cause confusing output or errors.
 
-7. **Typographical Errors**: Several typos in user-facing messages:
-   - "pelase" instead of "please" (multiple locations)
-   - "emter" instead of "enter"
-   - "didgits" instead of "digits"
-   - "entere" instead of "enter"
-   - "waht" instead of "what"
-   - "fate" instead of "date"
-   - "catergory" instead of "category"
 
-8. **Formatting Inconsistency**: Some print statements use commas instead of colons in the output format (lines 119, 143).
+7. **Formatting Inconsistency**: Some print statements use commas instead of colons in the output format (lines 119, 143).
 
-9. **Note Logic Issue**: The requirement to have a category before adding a note (line 283) may be unintentional or needs clarification.
+8. **Note Logic Issue**: The requirement to have a category before adding a note (line 283) may be unintentional or needs clarification.
 
 ## Example Usage
 
